@@ -168,38 +168,17 @@ nav {
   font-size: 1.3rem;
 }
 
-/* Responsive Design Media Query */
+/*#toodle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
 
-/*@media screen and (max-width: 769px) {
-  #navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 90px;
-    right: 0px;
-    width: 300px;
-    height: 100vh;
-    background-color: aqua;
-    padding: 40px 0 0 10px;
-  }
-
-  #navbar li {
-    margin-bottom: 25px;
-  }
-  #toodle {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: block;
-  }
-
-  #toodle i {
-    font-size: 1.3rem;
-  }
-}*/
+#toodle i {
+  font-size: 1.3rem;
+}
 
 /* Forced Colors Mode Styles */
 
@@ -411,4 +390,139 @@ nav {
 
 .footer-bottom p {
   color: #f7f9f2d0;
+}
+
+/* Responsive Design Media Queries */
+
+/* Tablet: Medium Screens */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  #navbar li {
+    padding: 5px 0;
+  }
+
+  .content-holder {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cover-image {
+    margin: 0 auto 20px;
+  }
+
+  .text-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .info-holder {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .list {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .connect-socials {
+    flex-direction: column;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    padding: 10px;
+  }
+}
+
+/* Mobile: Small Screens */
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    padding: 10px;
+  }
+
+  #navbar {
+    gap: 10px;
+  }
+
+  #navbar li {
+    padding: 5px;
+  }
+
+  #toodle {
+    display: block;
+  }
+
+  .homepage-content {
+    padding: 20px 10px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .content-holder {
+    padding: 15px;
+  }
+
+  .cover-image img {
+    width: 100%;
+  }
+
+  .text-content {
+    font-size: 0.9rem;
+  }
+
+  .info-holder {
+    padding: 10px;
+  }
+
+  .list h2 {
+    font-size: 1rem;
+  }
+
+  .list p {
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    padding: 15px;
+  }
+
+  .connect-socials a {
+    margin: 5px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
 }
