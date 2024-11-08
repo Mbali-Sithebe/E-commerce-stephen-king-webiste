@@ -1,0 +1,414 @@
+/*Home Syling Page*/
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f7f9f2;
+}
+
+/*Logo Styling*/
+.logo {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #f7f9f2;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Sticky Navigation Bar Starts Here! */
+
+#navbar_container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: background-color 200ms linear;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141e27;
+  padding: 20px 80px;
+}
+
+/* Dropdown Menu Styling */
+
+/*Navbar Links*/
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f7f9f2;
+  transition: 0.3s ease-in-out;
+}
+
+/* Styles for hover effect */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #f05454;
+  position: relative;
+}
+
+/* Adding underline effect */
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background-color: #f05454;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+/* Dropdown Menu Styling */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: #141e27;
+  font-size: 1.3rem;
+  border: none;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+
+/* The container <li> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: #141e27;
+  min-width: 125px;
+  margin-top: 5px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  max-height: 200px; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable scrolling */
+  pointer-events: none; /* Disable pointer events initially */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: "Playfair Display", serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 200 !important;
+  color: #f7f9f2;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f7f9f2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction when dropdown is open */
+}
+
+/* No underline effect on dropdown */
+.dropdown-content a:hover::after {
+  display: none;
+}
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Optional hover effect */
+}
+
+/*Styling Toodle Buttons*/
+#toodle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+}
+
+#toodle i {
+  color: #f7f9f2;
+  font-size: 1.3rem;
+}
+
+/* Responsive Design Media Query */
+
+/*@media screen and (max-width: 769px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    background-color: aqua;
+    padding: 40px 0 0 10px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #toodle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+  }
+
+  #toodle i {
+    font-size: 1.3rem;
+  }
+}*/
+
+/* Forced Colors Mode Styles */
+
+/*Homepage Content Holder*/
+/*Stephen King Intro and Animation Effect*/
+.intro h1 {
+  position: relative;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bold;
+  color: #141e27;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.intro h1::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1.5px;
+  background-color: #141e27;
+}
+
+/* Main content section */
+.homepage-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 0;
+  color: #f7f9f2;
+  gap: 20px;
+}
+
+/* Info-box styling */
+.content-holder {
+  display: flex;
+  align-items: flex-start;
+  background-color: #141e27;
+  padding: 20px 80px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+
+.cover-image img {
+  width: 275px;
+  height: auto;
+  border: 4px solid #f7f9f2;
+  margin-right: 30px;
+}
+
+.cover-image {
+  flex-shrink: 0;
+  margin-left: 100px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 50px;
+  color: #f7f9f2;
+  font-weight: bold;
+  font-family: "Playfair", serif;
+}
+
+.highlight {
+  color: #f05454;
+  font-weight: bold;
+  font-family: "Playfair", serif;
+}
+
+.text-content {
+  max-width: 600px;
+  margin-left: 350px;
+}
+
+.text-content p {
+  margin-top: 50px;
+  color: #f7f9f2;
+  line-height: 1.6;
+  font-family: "Playfair", serif;
+  font-size: 17px;
+}
+
+/*Main Book Information Footer*/
+.info-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f9f2;
+  padding: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Styling for each list item */
+.list {
+  padding: 0 60px;
+}
+
+/* Icon styling */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+/* Styling for h2 heading */
+.list h2 {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #141e27;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for p description */
+.list p {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer Sytling*/
+
+.footer-container {
+  left: 0;
+  bottom: 0;
+  background-color: #141e27;
+  width: 100%;
+  padding: 10px; /* Reduced padding for a smaller container */
+}
+
+.connect-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-socials a {
+  text-decoration: none;
+  padding: 7px;
+  background-color: #f7f9f2;
+  margin: 7px;
+  border-radius: 30%;
+}
+
+.connect-socials a i {
+  font-size: 1.3em;
+  color: #141e27;
+  opacity: 0.9;
+}
+
+/* Restored original hover effect */
+.connect-socials a:hover {
+  background-color: #101920;
+  transition: 0.5s;
+}
+
+.connect-socials a:hover i {
+  color: #f7f9f2;
+  transition: 0.5s;
+}
+
+.footer-nav {
+  margin: 20px 0; /* Reduced margin */
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  color: #f7f9f2cb;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* Hover effect for footer links */
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background-color: #101920;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #f7f9f2d0;
+}

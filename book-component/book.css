@@ -1,0 +1,310 @@
+/*Books Syling Page*/
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #f7f9f2;
+}
+
+/*Logo Styling*/
+.logo {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #f7f9f2;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+/*Navbar Box*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141e27;
+  padding: 20px 80px;
+  transition: top 0.3s ease;
+}
+
+/*Navbar Links*/
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f7f9f2;
+  transition: 0.3s ease-in-out;
+}
+
+/* Styles for hover effect */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #f05454;
+  position: relative;
+}
+
+/* Adding underline effect */
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background-color: #f05454;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+/* Dropdown Menu Styling */
+
+/* Dropdown Button */
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: #141e27;
+  font-size: 1.3rem;
+  border: none;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+
+/* The container <li> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: #141e27;
+  min-width: 125px;
+  margin-top: 5px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: "Playfair Display", serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 200 !important;
+  color: #f7f9f2;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #f7f9f2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* No underline effect on dropdown */
+.dropdown-content a:hover::after {
+  display: none;
+}
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*Footer Sytling*/
+
+.footer-container {
+  left: 0;
+  bottom: 0;
+  background-color: #141e27;
+  width: 100%;
+  padding: 10px; /* Reduced padding for a smaller container */
+}
+
+.connect-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-socials a {
+  text-decoration: none;
+  padding: 7px;
+  background-color: #f7f9f2;
+  margin: 7px;
+  border-radius: 30%;
+}
+
+.connect-socials a i {
+  font-size: 1.3em;
+  color: #141e27;
+  opacity: 0.9;
+}
+
+/* Restored original hover effect */
+.connect-socials a:hover {
+  background-color: #101920;
+  transition: 0.5s;
+}
+
+.connect-socials a:hover i {
+  color: #f7f9f2;
+  transition: 0.5s;
+}
+
+.footer-nav {
+  margin: 20px 0; /* Reduced margin */
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0; /* Removed default padding */
+}
+
+.footer-nav ul li {
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  color: #f7f9f2cb;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* Hover effect for footer links */
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background-color: #101920;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #f7f9f2d0;
+}
+
+/*BOOK BOX STYLE*/
+
+#books {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#books h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: #141e27;
+}
+
+#book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books-holder {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 180px;
+}
+
+.book-item {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  border: 2px solid #141e27;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+}
+
+.book-cover img {
+  width: 100%;
+  border-top-left-radius: 5px; /* Rounded corners */
+  border-top-right-radius: 5px; /* Rounded corners */
+}
+
+.book-title h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #141e27;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.book-price {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.book-price span {
+  font-weight: normal;
+  color: #0056b3;
+  font-family: Playfair, serif;
+  font-size: 1.3em;
+}
+
+.buy-book {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.buy-button {
+  background-color: #f05454;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #982929;
+}

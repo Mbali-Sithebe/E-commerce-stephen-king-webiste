@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen King</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="data-v.css" />
+
+    <!-- Link to D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <!-- Link To JS -->
+    <script src="../visuals-components/visuals.js"></script>
+    <script src="../visuals-components/pie-C.js"></script>
+
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="../about-components/about_author.html">About</a>
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+          <li><a href="../book-component/book.html">Books</a></li>
+          <li class="dropdown">
+            <a class="active" href="../visuals-components/data-v.html"
+              >Visuals</a
+            >
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+          <li><a href="../form-components/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="data-visual">
+      <div class="container">
+        <h1>
+          Bar Graph of Stephen King's Books Released and Their Page Counts
+        </h1>
+
+        <p>
+          This bar graph shows the number of pages in six of Stephen King's
+          books released between 1974 and 1979. The bars' widths represent the
+          page counts, with the vertical axis showing the publication years and
+          the horizontal axis showing the number of pages. Hover over the bars
+          for more details. Use the buttons below to toggle colors for specific
+          data, and click "Show All" to view the full dataset. Note that
+          interactivity requires an internet connection.
+        </p>
+
+        <!-- The visualization will be rendered here in the middle -->
+        <div id="bar-graph" style="width: 600px; height: 400px"></div>
+
+        <div>
+          <button id="color-btn-0095A8" style="background-color: #0095a8">
+            Color 1
+          </button>
+          <button id="color-btn-112E51" style="background-color: #112e51">
+            Color 2
+          </button>
+          <button id="color-btn-FF7043" style="background-color: #ff7043">
+            Color 3
+          </button>
+          <button id="color-btn-78909C" style="background-color: #78909c">
+            Color 4
+          </button>
+          <button id="reset-btn" style="background-color: burlywood">
+            Show All
+          </button>
+        </div>
+
+        <p><em>Source: Data taken from the Stephen King API.</em></p>
+      </div>
+    </main>
+
+    <!--Button to view pie chart and a button to use to go back to bar graph page-->
+
+    <!-- Button Container -->
+    <div class="button-container">
+      <!-- Pie Chart Button -->
+      <button
+        class="styled-button"
+        onclick="window.location.href='pie-C.html';"
+      >
+        Go to Pie Chart Data Visualization
+      </button>
+
+      <!-- Bar Graph Button -->
+      <button
+        class="styled-button"
+        onclick="window.location.href='data-v.html';"
+      >
+        Return to Bar Graph Data Visualization
+      </button>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <!--Creating A Footer-->
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

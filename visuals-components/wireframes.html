@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visuals Page</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="wireframes.css" />
+  </head>
+  <body>
+    <!--Link To JS-->
+
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+
+          <!-- About Page -->
+          <li class="dropdown">
+            <a href="../about-components/about_author.html">About</a>
+            <!-- Main link to About page with active class -->
+
+            <!-- About Drop Down Menu -->
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+
+          <!--Books Page-->
+          <li><a href="../book-component/book.html">Books</a></li>
+
+          <!--Visuals-->
+          <li class="dropdown">
+            <a class="active" href="../visuals-components/data-v.html"
+              >Visuals</a
+            >
+
+            <!--Visuals Drop Down Menu-->
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+
+          <!--Contact Us Page-->
+          <li><a href="../form-components/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wireframes">
+      <div class="wireframes-container">
+        <h1>The Design Process Page: Wireframes</h1>
+        <p>
+          This section highlights the visual design elements used throughout the
+          project, focusing on layout, color schemes, and visual hierarchy. It
+          showcases my design process, which began with the creation of detailed
+          wireframes that outlined the structure and functionality of each page,
+          ensuring a seamless user experience. Additionally, I present my design
+          style guide, defining the typography, color palette, and graphic
+          elements utilized throughout the project. This guide not only
+          maintains consistency but also reflects the brand's identity and
+          values. By incorporating feedback and iterative testing, I refined my
+          designs to create an engaging and cohesive visual narrative, where
+          every aspect, from initial sketches to final visuals, plays a crucial
+          role in achieving an effective user interface.
+        </p>
+
+        <div class="wireframes-gallery">
+          <!-- Image 1 -->
+          <div class="frame">
+            <h3>Medium Fidelity Wireframe</h3>
+            <img
+              src="images/Medium Fedility.png"
+              alt="Medium Fidelity Wireframe"
+              onclick="openModal(this)"
+            />
+          </div>
+
+          <!-- Image 2 -->
+          <div class="frame">
+            <h3>High Fidelity Wireframe</h3>
+            <img
+              src="images/High Fedility.png"
+              alt="High Fidelity Wireframe"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="frame">
+        <h3>The Style Guide</h3>
+        <img src="images/Group 58.png" onclick="openModal(this)" />
+      </div>
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <!--Creating A Footer-->
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

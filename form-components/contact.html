@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen King</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+
+          <!-- About Page -->
+          <li class="dropdown">
+            <a href="../about-components/about_author.html">About</a>
+            <!-- Main link to About page with active class -->
+
+            <!-- About Drop Down Menu -->
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+
+          <!--Books Page-->
+          <li><a href="../book-component/book.html">Books</a></li>
+
+          <!--Visuals-->
+          <li class="dropdown">
+            <a href="../visuals-components/data-v.html">Visuals</a>
+
+            <!--Visuals Drop Down Menu-->
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+
+          <!--Contact Us Page-->
+          <li>
+            <a class="active" href="../form-components/contact.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="request">
+      <h1>CONTACT US:</h1>
+      <p>Please complete the form below</p>
+    </main>
+
+    <!--Form Error-->
+    <div id="error"></div>
+
+    <!--Form Validation and Submission-->
+    <div class="authors-bio">
+      <div class="navigation">
+        <form id="form" action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email adress.."
+            required
+          />
+
+          <label for="message">Message Us</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 100px"
+          ></textarea>
+
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="marketing-permission"
+              name="marketing-permission"
+              required
+            />
+            <label for="marketing-permission" class="permission-label">
+              Marketing permission: I consent to be in contact via email using
+              the information I have provided in this form for the purpose of
+              news, updates, and marketing.
+            </label>
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <!--Creating A Footer-->
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+
+    <!-- DONT FORGET THE FOOTER -->
+
+    <script src="contact.js"></script>
+
+    <!-- Link To JS -->
+    <script type="module" src="../form-components/contact.js"></script>
+
+    <!-- Link To JS-SMTPJS EMAIL SEND -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>

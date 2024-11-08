@@ -1,0 +1,165 @@
+/*Authors Bio Syling Page*/
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #f7f9f2;
+}
+
+/*Half Page Color Background Backgroud*/
+.navigation {
+  background-color: #141e27;
+  width: 35%;
+  color: #f7f9f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1rem solid #f7f9f2;
+  height: 216%;
+}
+
+.author-bio {
+  background-color: #f7f9f2;
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #141e27;
+  margin-right: 20px;
+}
+
+.authors-bio {
+  display: flex;
+  height: 100vh;
+}
+
+.Bio-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Bio-list li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.biography {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.author-bio h1 {
+  color: #141e27;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Playfair, serif;
+  text-decoration: underline;
+  text-decoration-color: #f05454;
+  text-decoration-thickness: 3px;
+}
+
+.author-bio p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #141e27;
+  text-align: justify;
+  font-family: Playfair, serif;
+}
+
+.stephen-link {
+  color: #141e27;
+}
+
+.stephen-link a {
+  color: #f05454;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+/*Images*/
+.gallary {
+  background-color: #f7f9f2;
+  padding: 20px;
+  border-radius: 0px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 90%;
+  margin-left: 20px;
+  box-sizing: border-box;
+  float: left;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.photo-container img {
+  width: 120px;
+  height: auto;
+  margin: 5px;
+}
+
+/*The Table Syling*/
+#achievements {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#achievements td,
+#achievements th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#achievements tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#achievements tr:hover {
+  background-color: #ddd;
+}
+
+#achievements th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f05454;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Additional styling for better visuals */
+#achievements th,
+#achievements td {
+  border-bottom: 2px solid #ddd;
+}
+
+#achievements tr {
+  transition: background-color 0.3s;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/*Footer Sytling*/

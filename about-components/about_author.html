@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen King</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="about_author.css" />
+  </head>
+  <body>
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+
+          <!-- About Page -->
+          <li class="dropdown">
+            <a class="active" href="../about-components/about_author.html"
+              >About</a
+            >
+            <!-- Main link to About page with active class -->
+
+            <!-- About Drop Down Menu -->
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+
+          <!--Books Page-->
+          <li><a href="../book-component/book.html">Books</a></li>
+
+          <!--Visuals-->
+          <li class="dropdown">
+            <a href="../visuals-components/data-v.html">Visuals</a>
+
+            <!--Visuals Drop Down Menu-->
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+
+          <!--Contact Us Page-->
+          <li><a href="../form-components/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- The Main Content -->
+    <main class="author-content">
+      <section class="text-info">
+        <h1 class="heading">ABOUT AUTHOR</h1>
+        <p class="text-info">
+          Stephen King, born in Portland, Maine, in 1947, is one of the world’s
+          most famous and prolific authors, known for his mastery of horror,
+          suspense, and fantasy. His debut novel, ‘Carrie’ (1974), launched his
+          career, followed by iconic works like The Shining, It, and The Stand.
+          With over 60 novels and 200 short stories, many adapted into films and
+          TV series. Stephen King's influence on popular culture is immense. He
+          has received numerous awards, including the National Medal of Arts and
+          multiple Bram Stoker Awards. Stephen King currently lives in Maine and
+          Florida with his wife, Tabitha, continuing his legacy as a literary
+          giant. His influence extends far beyond the written word, with his
+          stories shaping the landscape of horror across various media. His
+          works have captivated audiences globally, with adaptations reaching
+          new generations through movies, TV series, and even stage productions.
+          Stephen King's ability to blend relatable human emotions with
+          supernatural elements has not only redefined horror but also expanded
+          its appeal.
+        </p>
+
+        <section id="button">
+          <button class="Btn" onclick="openBio()">Read More</button>
+        </section>
+      </section>
+
+      <!-- Author Picture -->
+      <figure class="author-image">
+        <img src="images/image 2.jpg" alt="Stephen King Image" />
+      </figure>
+    </main>
+
+    <!-- Box Holder -->
+    <div class="box-holder">
+      <!-- Box 1 -->
+      <section class="publishing-achie">
+        <ul id="publishing">
+          <li>
+            <h2 class="counter" data-target="65">0 +</h2>
+            <!-- Start from 0 -->
+            <p>Novels Published</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Box 2 -->
+      <section class="publishing-achie">
+        <ul id="publishing">
+          <li>
+            <h2 class="counter" data-target="200">0 +</h2>
+            <!-- Start from 0 -->
+            <p>Short Stories</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Box 3 -->
+      <section class="publishing-achie">
+        <ul id="publishing">
+          <li>
+            <h2 class="counter" data-target="100">0 +</h2>
+            <!-- Start from 0 -->
+            <p>Best Seller Awards</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- The Buttons -->
+    <div class="button-holder"></div>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <!--Creating A Footer-->
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+
+    <!-- Link To JS - Moved to the end of body -->
+    <script type="module" src="about_author.js"></script>
+    <script type="module" src="../home-components/homepage.js"></script>
+  </body>
+</html>

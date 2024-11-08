@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen King</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <!--Link To JS-->
+    <script src="book.js"></script>
+
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+
+          <!-- About Page -->
+          <li class="dropdown">
+            <a href="../about-components/about_author.html">About</a>
+            <!-- Main link to About page with active class -->
+
+            <!-- About Drop Down Menu -->
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+
+          <!--Books Page-->
+          <li>
+            <a class="active" href="../book-component/book.html">Books</a>
+          </li>
+
+          <!--Visuals-->
+          <li class="dropdown">
+            <a href="../visuals-components/data-v.html">Visuals</a>
+
+            <!--Visuals Drop Down Menu-->
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+
+          <!--Contact Us Page-->
+          <li><a href="../form-components/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="books">
+      <h1>Book Collection by Stephen King</h1>
+      <section id="book-container">
+        <!-- List Format of Books -->
+
+        <ul class="books-holder">
+          <!-- Book 1 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 2.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>The Stand</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span>R324.00</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Stand-Stephen-King/dp/1444720732/ref=pd_bxgy_thbs_d_sccl_2/260-8576416-9059600?pd_rd_w=yOekJ&content-id=amzn1.sym.c897e07e-78db-48fe-b1c8-1e0878714f71&pf_rd_p=c897e07e-78db-48fe-b1c8-1e0878714f71&pf_rd_r=KRKGGVGKMXCJS9JPHNCA&pd_rd_wg=m6XLL&pd_rd_r=82a939b5-50df-4d2f-84f9-629cf8ac1837&pd_rd_i=1444720732&psc=1"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+
+          <!-- Adding More Books Here !! -->
+          <!-- Book 2 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 3.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>Later</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span>R139.00</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Later-Stephen-King/dp/1789096499/ref=sr_1_7?adgrpid=164884620187&dib=eyJ2IjoiMSJ9.ERHkJVttbDxd2KpIOTz1aSu4U2ew9vpVB0n3sWQcBX3iX9s0PxFas1GmsTfn147fY4jRtVxV541v2cCBqwBi1fO5Ikmfa2WGMPL6mG5JoiY4KFM-vuPri6nsFTj_R3g2Vb3689rbKYiaKjmhcv5wFr9vm35ro4vZKz4O-0ng2pBLNWgUE8Y2wPly1r7DG7z_mLwdOY3jQPgAujRDfvwtvijWyfh2L154TZKjZUQXXeo.xhetoH-BlCsAXPdS1E39JTXi8sIZVylIARRZq8rJHmU&dib_tag=se&gad_source=1&hvadid=698289803035&hvdev=c&hvlocphy=1028665&hvnetw=g&hvqmt=b&hvrand=570659684132592505&hvtargid=kwd-10899210&hydadcr=26970_2826793&keywords=stephen+king+books&qid=1730813867&s=books&sr=1-7"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+
+          <!-- Book 3 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 4.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>The Shining</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span> R274.50</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Shining-Stephen-King/dp/1444720724/ref=sr_1_8?adgrpid=164884620187&dib=eyJ2IjoiMSJ9.ERHkJVttbDxd2KpIOTz1aSu4U2ew9vpVB0n3sWQcBX3iX9s0PxFas1GmsTfn147fY4jRtVxV541v2cCBqwBi1fO5Ikmfa2WGMPL6mG5JoiY4KFM-vuPri6nsFTj_R3g2Vb3689rbKYiaKjmhcv5wFr9vm35ro4vZKz4O-0ng2pBLNWgUE8Y2wPly1r7DG7z_mLwdOY3jQPgAujRDfvwtvijWyfh2L154TZKjZUQXXeo.xhetoH-BlCsAXPdS1E39JTXi8sIZVylIARRZq8rJHmU&dib_tag=se&gad_source=1&hvadid=698289803035&hvdev=c&hvlocphy=1028665&hvnetw=g&hvqmt=b&hvrand=570659684132592505&hvtargid=kwd-10899210&hydadcr=26970_2826793&keywords=stephen+king+books&qid=1730813867&s=books&sr=1-8"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+
+          <!-- Book 4 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 5.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>Nightmares and Dreamscapes: Stories</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span>R422.00</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Nightmares-Dreamscapes-Stories-Stephen-King/dp/1501192035/ref=sr_1_9?adgrpid=164884620187&dib=eyJ2IjoiMSJ9.ERHkJVttbDxd2KpIOTz1aSu4U2ew9vpVB0n3sWQcBX3iX9s0PxFas1GmsTfn147fY4jRtVxV541v2cCBqwBi1fO5Ikmfa2WGMPL6mG5JoiY4KFM-vuPri6nsFTj_R3g2Vb3689rbKYiaKjmhcv5wFr9vm35ro4vZKz4O-0ng2pBLNWgUE8Y2wPly1r7DG7z_mLwdOY3jQPgAujRDfvwtvijWyfh2L154TZKjZUQXXeo.xhetoH-BlCsAXPdS1E39JTXi8sIZVylIARRZq8rJHmU&dib_tag=se&gad_source=1&hvadid=698289803035&hvdev=c&hvlocphy=1028665&hvnetw=g&hvqmt=b&hvrand=570659684132592505&hvtargid=kwd-10899210&hydadcr=26970_2826793&keywords=stephen+king+books&qid=1730813867&s=books&sr=1-9"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+
+          <!-- Book 5 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 6.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>Carrie</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span>R185.00</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Carrie-Stephen-King/dp/0307743667/ref=sr_1_13?adgrpid=164884620187&dib=eyJ2IjoiMSJ9.ERHkJVttbDxd2KpIOTz1aSu4U2ew9vpVB0n3sWQcBX3iX9s0PxFas1GmsTfn147fY4jRtVxV541v2cCBqwBi1fO5Ikmfa2WGMPL6mG5JoiY4KFM-vuPri6nsFTj_R3g2Vb3689rbKYiaKjmhcv5wFr9vm35ro4vZKz4O-0ng2pBLNWgUE8Y2wPly1r7DG7z_mLwdOY3jQPgAujRDfvwtvijWyfh2L154TZKjZUQXXeo.xhetoH-BlCsAXPdS1E39JTXi8sIZVylIARRZq8rJHmU&dib_tag=se&gad_source=1&hvadid=698289803035&hvdev=c&hvlocphy=1028665&hvnetw=g&hvqmt=b&hvrand=570659684132592505&hvtargid=kwd-10899210&hydadcr=26970_2826793&keywords=stephen+king+books&qid=1730813867&s=books&sr=1-13"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+
+          <!-- Book 6 -->
+          <li class="book-item">
+            <!-- Book Cover Image -->
+            <div class="book-cover">
+              <img src="images/book 7.jpg" alt="Book 1" />
+            </div>
+            <!-- Book Title -->
+            <div class="book-title">
+              <h2>'Salem's Lot</h2>
+            </div>
+            <!-- Book Price -->
+            <div class="book-price">
+              <span>R404.00</span>
+            </div>
+            <!-- Buy Book Button -->
+            <div class="buy-book">
+              <a
+                href="https://www.amazon.co.za/Salems-Lot-Stephen-King/dp/0345806794/ref=sr_1_15?adgrpid=164884620187&dib=eyJ2IjoiMSJ9.ERHkJVttbDxd2KpIOTz1aSu4U2ew9vpVB0n3sWQcBX3iX9s0PxFas1GmsTfn147fY4jRtVxV541v2cCBqwBi1fO5Ikmfa2WGMPL6mG5JoiY4KFM-vuPri6nsFTj_R3g2Vb3689rbKYiaKjmhcv5wFr9vm35ro4vZKz4O-0ng2pBLNWgUE8Y2wPly1r7DG7z_mLwdOY3jQPgAujRDfvwtvijWyfh2L154TZKjZUQXXeo.xhetoH-BlCsAXPdS1E39JTXi8sIZVylIARRZq8rJHmU&dib_tag=se&gad_source=1&hvadid=698289803035&hvdev=c&hvlocphy=1028665&hvnetw=g&hvqmt=b&hvrand=570659684132592505&hvtargid=kwd-10899210&hydadcr=26970_2826793&keywords=stephen+king+books&qid=1730813867&s=books&sr=1-15"
+                target="_blank"
+                class="buy-button"
+                >Buy Book on Amazon</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--Creating A Footer-->
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
