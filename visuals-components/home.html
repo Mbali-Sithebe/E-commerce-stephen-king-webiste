@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen King</title>
+
+    <!-- Font Awesome CDN Link Tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="../home-components/homepage.css" />
+  </head>
+  <body>
+    <!-- Navbar Code -->
+    <header class="navbar-section">
+      <nav class="navbar-container">
+        <h1 class="logo"><a href="index.html">Stephen King</a></h1>
+        <ul id="navbar">
+          <li>
+            <a class="active" href="../visuals-components/home.html">Home</a>
+          </li>
+
+          <!-- About Page -->
+          <li class="dropdown">
+            <a href="../about-components/about_author.html">About</a>
+            <!-- Main link to About page with active class -->
+
+            <!-- About Drop Down Menu -->
+            <div class="dropdown-content">
+              <a href="../about-components/about_author.html">About Author</a>
+              <a href="../theory-components/theory.html">The Essay</a>
+              <a href="../blog-components/blog.html">The Blog</a>
+            </div>
+          </li>
+
+          <!--Books Page-->
+          <li>
+            <a href="../book-component/book.html">Books</a>
+          </li>
+
+          <!--Visuals-->
+          <li class="dropdown">
+            <a href="../visuals-components/data-v.html">Visuals</a>
+
+            <!--Visuals Drop Down Menu-->
+            <div class="dropdown-content">
+              <a href="../visuals-components/data-v.html">Data Visualization</a>
+              <a href="../visuals-components/wireframes.html">The Wireframes</a>
+            </div>
+          </li>
+
+          <!--Contact Us Page-->
+          <li>
+            <a href="../form-components/contact.html">Contact Us</a>
+          </li>
+
+          <!-- Toodle Button -->
+          <button id="toodle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times" style="display: none"></i>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="stephen-content">
+      <section class="intro">
+        <h1>Stephen King: Award-winning bestseller</h1>
+      </section>
+    </main>
+
+    <main class="homepage-content">
+      <section class="content-holder">
+        <!-- Book Cover Picture -->
+        <figure class="cover-image">
+          <img
+            src="../about-components/images/cover.jpg"
+            alt="Cover-Book-Image"
+          />
+        </figure>
+        <div class="text-content">
+          <!-- New wrapper for text -->
+          <h1 class="heading">
+            The Talisman:
+            <span class="highlight">2024 Comeback Masterpiece Novel</span>
+          </h1>
+          <p>
+            Originally published in 1984, The Talisman is an epic fantasy
+            thriller co-written by bestselling authors Stephen King and Peter
+            Straub. Nominated for the World Fantasy Award and a Locus Award
+            finalist in 1985, this gripping tale of a young boy's journey to
+            save his mother continues to captivate readers. Soon to be adapted
+            into a Netflix series, The Talisman remains a timeless classic.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <main class="main-book-info">
+      <section class="info-holder">
+        <!--1. Print Length-->
+        <div class="list">
+          <h2>Print Length</h2>
+          <!--Icon-->
+          <figure class="icons">
+            <i class="fa-solid fa-desktop"></i>
+          </figure>
+          <!--Description-->
+          <p>994 Pages</p>
+        </div>
+
+        <!--2. Language-->
+        <div class="list">
+          <h2>Language</h2>
+          <!--Icon-->
+          <figure class="icons">
+            <i class="fa-solid fa-globe"></i>
+          </figure>
+          <!--Description-->
+          <p>English</p>
+        </div>
+
+        <!--3. Ratings-->
+        <div class="list">
+          <h2>Ratings</h2>
+          <!--Icon-->
+          <figure class="icons">
+            <i class="fa-solid fa-star"></i>
+          </figure>
+          <!--Description-->
+          <p>1,829 Ratings</p>
+        </div>
+
+        <!--4. Publisher-->
+        <div class="list">
+          <h2>Publisher</h2>
+          <!--Icon-->
+          <figure class="icons">
+            <i class="fa-solid fa-user-tie"></i>
+          </figure>
+          <!--Description-->
+          <p>Pocket Books</p>
+        </div>
+
+        <!--5. Publishing Date-->
+        <div class="list">
+          <h2>Publishing Date</h2>
+          <!--Icon-->
+          <figure class="icons">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </figure>
+          <!--Description-->
+          <p>23 January 2024</p>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer-container">
+      <section class="connect-socials">
+        <a href="https://www.linkedin.com/in/stephen-king-a393a3188/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/stephenkingofficialpage/?hl=en"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/todostephenking"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://x.com/stephenking"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </section>
+
+      <!--Creating A Footer-->
+      <section class="footer-bottom">
+        <p>
+          © Copyright 2000 - 2024 Stephen King - All Rights Reserved. Privacy
+          Policy
+        </p>
+      </section>
+    </footer>
+
+    <!-- Link To JS -->
+    <script type="module" src="../about-components/home.js"></script>
+    <script type="module" src="../about-components/about_author.js"></script>
+  </body>
+</html>
